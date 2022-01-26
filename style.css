@@ -1,0 +1,102 @@
+* {
+  font-family: "Permanent Marker", cursive;
+  color: whitesmoke;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(#45b9eb, #5a66d3, #280a6e);
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(36, 1fr);
+}
+
+.bubbles {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: -70px;
+}
+
+.bubbles img {
+  animation: bubble 7s linear infinite;
+}
+
+@keyframes bubble {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  70% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-80vh);
+    opacity: 0;
+  }
+}
+.bubbles img:nth-child(1) {
+  animation-delay: 1s;
+}
+.bubbles img:nth-child(2) {
+  animation-delay: 2s;
+  width: 80px;
+}
+.bubbles img:nth-child(3) {
+  animation-delay: 3.5s;
+}
+.bubbles img:nth-child(4) {
+  animation-delay: 1s;
+  width: 25px;
+}
+.bubbles img:nth-child(5) {
+  animation-delay: 2.5s;
+  width: 70px;
+}
+.bubbles img:nth-child(6) {
+  animation-delay: 3s;
+  width: 30px;
+}
+.bubbles img:nth-child(7) {
+  animation-delay: 1.5s;
+  width: 65px;
+}
+
+div {
+  border: solid 1px white;
+}
+
+.nav {
+  grid-area: 1/1 / span 3 / span 12;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav a {
+  width: 25%;
+  height: 80px;
+  padding: 10px;
+  text-align: center;
+  /*border: whitesmoke solid 1px;*/
+  text-decoration: none;
+  font-size: 22px;
+  margin: 10px;
+  border-radius: 40%;
+}
+
+.nav a:hover {
+  background-color: rgb(13, 96, 173);
+  color: wheat;
+}
