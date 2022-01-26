@@ -21,7 +21,7 @@ body {
   align-items: center;
   justify-content: space-around;
   position: absolute;
-  bottom: -70px;
+  bottom: -130%;
 }
 
 .bubbles img {
@@ -73,9 +73,9 @@ body {
   width: 65px;
 }
 
-div {
+/*div {
   border: solid 1px white;
-}
+}*/
 
 .nav {
   grid-area: 1/1 / span 3 / span 12;
@@ -99,4 +99,31 @@ div {
 .nav a:hover {
   background-color: rgb(13, 96, 173);
   color: wheat;
+}
+
+.main {
+  grid-area: 4/1 / span 10 / span 12;
+  text-align: center;
+  padding: 50px;
+  font-size: large;
+}
+
+#projects {
+  grid-area: 14/1 / span 12 / span 12;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+figure {
+  margin: 30px;
+  text-align: center;
+}
+
+#contact {
+  grid-area: 26/ 1 / span 9 / span 12;
+  text-align: center;
+  padding: 40px;
+  font-size: larger;
+  line-height: 300%;
 }
